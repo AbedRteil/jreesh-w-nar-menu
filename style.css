@@ -5,7 +5,6 @@
 :root {
     --bg: #17100c;
     --bg-light: #211610;
-
     --card: #2a1b13;
     --card-hover: #352219;
 
@@ -63,9 +62,7 @@ body {
     min-height: 470px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     overflow: hidden;
@@ -75,6 +72,7 @@ body {
             rgba(20, 10, 5, 0.45),
             rgba(20, 10, 5, 0.90)
         ),
+
         radial-gradient(
             circle at center,
             #633c1d,
@@ -107,11 +105,9 @@ body {
 
 .hero-content {
     position: relative;
-
     z-index: 2;
 
     width: 100%;
-
     max-width: 900px;
 
     text-align: center;
@@ -122,7 +118,6 @@ body {
 
 .fire-icon {
     font-size: 42px;
-
     margin-bottom: 8px;
 }
 
@@ -174,7 +169,6 @@ body {
 
 .hero-divider span {
     width: 60px;
-
     height: 1px;
 
     background:
@@ -204,7 +198,6 @@ body {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     flex-wrap: wrap;
@@ -219,7 +212,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 8px;
@@ -266,7 +258,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 9px;
@@ -382,7 +373,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 15px;
@@ -529,7 +519,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
 
     gap: 15px;
@@ -544,6 +533,7 @@ body {
             rgba(255, 255, 255, 0.035),
             rgba(255, 255, 255, 0)
         ),
+
         var(--card);
 
     border: 1px solid var(--border);
@@ -628,7 +618,6 @@ body {
 
         transform: translateY(0);
     }
-
 }
 
 
@@ -669,6 +658,103 @@ body {
     margin-top: 5px;
 }
 
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.social-section {
+    margin-top: 25px;
+}
+
+
+.social-title {
+    color: var(--cream) !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+.social-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 9px 20px;
+
+    margin: 3px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: var(--cream);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.social-btn:hover {
+    transform: translateY(-2px);
+
+    background: rgba(217, 168, 78, 0.10);
+
+    border-color: rgba(217, 168, 78, 0.5);
+}
+
+
+.social-btn:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   INSTAGRAM ICON
+========================= */
+
+.instagram-icon {
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   TIKTOK ICON
+========================= */
+
+.tiktok-icon {
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   COPYRIGHT
+========================= */
 
 .copyright {
     margin-top: 30px !important;
@@ -711,7 +797,6 @@ body {
         width: min(100%, 320px);
 
         margin-left: auto;
-
         margin-right: auto;
 
         gap: 9px;
@@ -739,7 +824,6 @@ body {
         top: 5px;
 
         margin-left: -5px;
-
         margin-right: -5px;
     }
 
@@ -768,6 +852,13 @@ body {
 
     .item-price {
         font-size: 16px;
+    }
+
+
+    .social-btn {
+        padding: 9px 18px;
+
+        font-size: 13px;
     }
 
 }
@@ -808,141 +899,11 @@ body {
         font-size: 15px;
     }
 
-}
-/* =========================
-   SOCIAL MEDIA
-========================= */
 
-.social-section {
-    margin-top: 25px;
-}
+    .social-btn {
+        padding: 8px 15px;
 
+        gap: 7px;
+    }
 
-.social-title {
-    color: var(--cream) !important;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    margin-bottom: 10px;
-}
-
-
-.social-btn {
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 8px;
-
-    padding: 9px 20px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.04);
-
-    color: var(--cream);
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
-}
-
-
-.social-btn:hover {
-    transform: translateY(-2px);
-
-    background: rgba(217, 168, 78, 0.10);
-
-    border-color: rgba(217, 168, 78, 0.5);
-}
-
-
-.social-btn:active {
-    transform: scale(0.97);
-}
-/* =========================
-   SOCIAL MEDIA
-========================= */
-
-.social-section {
-    margin-top: 25px;
-}
-
-
-.social-title {
-    color: var(--cream) !important;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    margin-bottom: 10px;
-}
-
-
-.social-btn {
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 9px;
-
-    padding: 9px 20px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 10px;
-
-    background: rgba(255, 255, 255, 0.04);
-
-    color: var(--cream);
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
-}
-
-
-.instagram-icon {
-    width: 19px;
-
-    height: 19px;
-
-    flex-shrink: 0;
-}
-
-
-.social-btn:hover {
-    transform: translateY(-2px);
-
-    background: rgba(217, 168, 78, 0.10);
-
-    border-color: rgba(217, 168, 78, 0.5);
-}
-
-
-.social-btn:active {
-    transform: scale(0.97);
 }
