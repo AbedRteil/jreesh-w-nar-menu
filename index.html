@@ -30,9 +30,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
 
     <!-- =========================
          HERO
@@ -42,18 +40,40 @@
 
         <div class="hero-content">
 
+           <div class="language-switcher">
+
+    <span class="language-label arabic-label">
+        عربي 🇱🇧
+    </span>
+
+    <button
+        id="language-toggle"
+        class="language-toggle"
+        type="button"
+        aria-label="Switch language"
+    >
+        <span class="toggle-circle"></span>
+    </button>
+
+    <span class="language-label english-label">
+         English
+    </span>
+
+</div>
             <div class="fire-icon">
                 🔥
             </div>
 
-            <h1>
+            <h1 id="shop-name">
                 جريش و نار
             </h1>
 
-            <p class="hero-subtitle">
+            <p
+                class="hero-subtitle"
+                id="hero-subtitle"
+            >
                 مناقيش على أصولها
             </p>
-
 
             <!-- Divider -->
 
@@ -66,7 +86,6 @@
                 <span></span>
 
             </div>
-
 
             <!-- =====================
                  SHOP INFO
@@ -82,11 +101,14 @@
 
                     <div>
 
-                        <p>
+                        <p id="opening-text">
                             دوامنا يومياً ما عدا الاثنين
                         </p>
 
-                        <p dir="ltr">
+                        <p
+                            id="opening-hours"
+                            dir="ltr"
+                        >
                             6:00 pm -> 11:00 pm
                         </p>
 
@@ -94,21 +116,19 @@
 
                 </div>
 
-
                 <div class="info-item">
 
                     <span class="info-icon">
                         🛵
                     </span>
 
-                    <span>
+                    <span id="delivery-text">
                         خدمة توصيل متوفرة
                     </span>
 
                 </div>
 
             </div>
-
 
             <!-- =====================
                  MAIN ACTION BUTTONS
@@ -129,12 +149,11 @@
                         💬
                     </span>
 
-                    <span>
+                    <span id="whatsapp-text">
                         اطلب عبر واتساب
                     </span>
 
                 </a>
-
 
                 <!-- Location -->
 
@@ -149,14 +168,13 @@
                         📍
                     </span>
 
-                    <span>
+                    <span id="location-text">
                         موقعنا
                     </span>
 
                 </a>
 
             </div>
-
 
             <!-- Phone -->
 
@@ -165,7 +183,10 @@
                 class="phone-link"
             >
 
-                📞 اتصل بنا:
+                <span id="phone-text">
+                    📞 اتصل بنا:
+                </span>
+
                 <strong dir="ltr">
                     81 755 102
                 </strong>
@@ -177,7 +198,6 @@
     </header>
 
 
-
     <!-- =========================
          MENU
     ========================== -->
@@ -185,7 +205,6 @@
     <main class="menu-container">
 
         <section class="menu-section">
-
 
             <!-- SECTION HEADING -->
 
@@ -197,18 +216,17 @@
 
                 <div>
 
-                    <h2>
+                    <h2 id="menu-title">
                         قائمة المناقيش
                     </h2>
 
-                    <p>
+                    <p id="menu-subtitle">
                         اختار من تشكيلتنا
                     </p>
 
                 </div>
 
             </div>
-
 
             <!-- CATEGORY BAR -->
 
@@ -217,7 +235,6 @@
                 class="category-bar"
             >
             </div>
-
 
             <!-- MENU GRID -->
 
@@ -230,7 +247,6 @@
         </section>
 
     </main>
-
 
 
     <!-- =========================
@@ -247,10 +263,9 @@
             جريش و نار
         </h3>
 
-        <p>
+        <p id="footer-subtitle">
             مناقيش على أصولها 🔥
         </p>
-
 
         <!-- =========================
              SOCIAL MEDIA
@@ -258,10 +273,12 @@
 
         <div class="social-section">
 
-            <p class="social-title">
+            <p
+                class="social-title"
+                id="social-title"
+            >
                 تابعونا على
             </p>
-
 
             <!-- Instagram -->
 
@@ -271,8 +288,6 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-
-                <!-- Instagram Logo -->
 
                 <svg
                     class="instagram-icon"
@@ -316,7 +331,6 @@
 
             </a>
 
-
             <!-- TikTok -->
 
             <a
@@ -325,8 +339,6 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-
-                <!-- TikTok Logo -->
 
                 <svg
                     class="tiktok-icon"
@@ -349,7 +361,6 @@
 
         </div>
 
-
         <!-- Copyright -->
 
         <p class="copyright">
@@ -357,7 +368,6 @@
         </p>
 
     </footer>
-
 
 
     <script src="script.js"></script>

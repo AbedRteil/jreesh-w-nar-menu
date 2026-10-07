@@ -1,4 +1,81 @@
 /* =========================
+   LANGUAGE
+========================= */
+
+let currentLanguage = "ar";
+
+
+const translations = {
+
+    ar: {
+
+        shopName: "جريش و نار",
+
+        heroSubtitle: "مناقيش على أصولها",
+
+        openingText: "دوامنا يومياً ما عدا الاثنين",
+
+        deliveryText: "خدمة توصيل متوفرة",
+
+        whatsapp: "اطلب عبر واتساب",
+
+        location: "موقعنا",
+
+        phone: "📞 اتصل بنا:",
+
+        menuTitle: "قائمة المناقيش",
+
+        menuSubtitle: "اختار من تشكيلتنا",
+
+        all: "الكل",
+
+        socialTitle: "تابعونا على",
+
+        footerSubtitle: "مناقيش على أصولها 🔥",
+
+        noItems: "لا يوجد أصناف حالياً",
+
+        currency: "ل.ل"
+
+    },
+
+
+    en: {
+
+        shopName: "Jreesh W Nar",
+
+        heroSubtitle: "High-quality Manakish",
+
+        openingText: "Open daily except Monday",
+
+        deliveryText: "Delivery available",
+
+        whatsapp: "Order via WhatsApp",
+
+        location: "Our Location",
+
+        phone: "📞 Call us:",
+
+        menuTitle: "Manakish Menu",
+
+        menuSubtitle: "Choose from our selection",
+
+        all: "All",
+
+        socialTitle: "Follow us",
+
+        footerSubtitle: "Authentic Manakish 🔥",
+
+        noItems: "No items available",
+
+        currency: "LBP"
+
+    }
+
+};
+
+
+/* =========================
    CATEGORIES
 ========================= */
 
@@ -6,17 +83,31 @@ const categories = [
 
     {
         id: "classic",
-        name: "كلاسيك"
+
+        name: {
+            ar: "كلاسيك",
+            en: "Classic"
+        }
     },
+
 
     {
         id: "chicken",
-        name: "تشيكن 🍗"
+
+        name: {
+            ar: "تشيكن 🍗",
+            en: "Chicken 🍗"
+        }
     },
+
 
     {
         id: "jreesh",
-        name: "جريش و نار 🔥"
+
+        name: {
+            ar: "جريش و نار 🔥",
+            en: "Jreesh W Nar 🔥"
+        }
     }
 
 ];
@@ -33,56 +124,109 @@ const menuItems = [
     ====================== */
 
     {
-        name: "جبنة",
+        name: {
+            ar: "جبنة",
+            en: "Cheese"
+        },
+
         price: 200000,
+
         category: "classic"
     },
 
+
     {
-        name: "زعتر بلدي",
+        name: {
+            ar: "زعتر بلدي",
+            en: "Lebanese Zaatar"
+        },
+
         price: 80000,
+
         category: "classic"
     },
 
+
     {
-        name: "كشك",
+        name: {
+            ar: "كشك",
+            en: "Kishk"
+        },
+
         price: 100000,
+
         category: "classic"
     },
 
+
     {
-        name: "كوكتيل (زعتر و جبنة)",
+        name: {
+            ar: "كوكتيل (زعتر و جبنة)",
+            en: "Zaatar & Cheese"
+        },
+
         price: 130000,
+
         category: "classic"
     },
 
+
     {
-        name: "بندورة و بصل",
+        name: {
+            ar: "بندورة و بصل",
+            en: "Tomato & Onion"
+        },
+
         price: 100000,
+
         category: "classic"
     },
 
+
     {
-        name: "بندورة و بصل مع جبنة",
+        name: {
+            ar: "بندورة و بصل مع جبنة",
+            en: "Tomato, Onion & Cheese"
+        },
+
         price: 150000,
+
         category: "classic"
     },
 
+
     {
-        name: "كشك مع جبنة",
+        name: {
+            ar: "كشك مع جبنة",
+            en: "Kishk & Cheese"
+        },
+
         price: 150000,
+
         category: "classic"
     },
 
+
     {
-        name: "سبانخ و جبنة",
+        name: {
+            ar: "سبانخ و جبنة",
+            en: "Spinach & Cheese"
+        },
+
         price: 180000,
+
         category: "classic"
     },
 
+
     {
-        name: "زعتر مع خضار",
+        name: {
+            ar: "زعتر مع خضار",
+            en: "Zaatar & Vegetables"
+        },
+
         price: 100000,
+
         category: "classic"
     },
 
@@ -92,32 +236,61 @@ const menuItems = [
     ====================== */
 
     {
-        name: "فاهيتا",
+        name: {
+            ar: "فاهيتا",
+            en: "Chicken Fajita"
+        },
+
         price: 350000,
+
         category: "chicken"
     },
 
+
     {
-        name: "تشيكن ساب",
+        name: {
+            ar: "تشيكن ساب",
+            en: "Chicken Sub"
+        },
+
         price: 350000,
+
         category: "chicken"
     },
 
+
     {
-        name: "سبايسي تشكن",
+        name: {
+            ar: "سبايسي تشكن",
+            en: "Spicy Chicken"
+        },
+
         price: 350000,
+
         category: "chicken"
     },
 
+
     {
-        name: "دجاج باربكيو",
+        name: {
+            ar: "دجاج باربكيو",
+            en: "BBQ Chicken"
+        },
+
         price: 350000,
+
         category: "chicken"
     },
 
+
     {
-        name: "دجاج مع صوص حبق",
+        name: {
+            ar: "دجاج مع صوص حبق",
+            en: "Chicken with Basil Sauce"
+        },
+
         price: 350000,
+
         category: "chicken"
     },
 
@@ -127,48 +300,87 @@ const menuItems = [
     ====================== */
 
     {
-        name: "حبش و جبنة",
+        name: {
+            ar: "حبش و جبنة",
+            en: "Turkey & Cheese"
+        },
+
         price: 300000,
+
         category: "jreesh"
     },
 
+
     {
-        name: "مرتديلا و جبنة",
+        name: {
+            ar: "مرتديلا و جبنة",
+            en: "Mortadella & Cheese"
+        },
+
         price: 300000,
+
         category: "jreesh"
     },
 
+
     {
-        name: "حلوم مع صوص حبق",
+        name: {
+            ar: "حلوم مع صوص حبق",
+            en: "Halloumi with Basil Sauce"
+        },
+
         price: 250000,
+
         category: "jreesh"
     },
 
+
     {
-        name: "سبيسيال جريش و نار",
+        name: {
+            ar: "سبيسيال جريش و نار",
+            en: "Jreesh W Nar Special"
+        },
+
         price: 250000,
+
         category: "jreesh"
     },
-    
+
+
     {
-        name: " بيبروني",
+        name: {
+            ar: "بيبروني",
+            en: "Pepperoni"
+        },
+
         price: 300000,
+
         category: "jreesh"
     },
 
+
     {
-        name: " جبنة حرة مع جوز",
+        name: {
+            ar: "جبنة حرة مع جوز",
+            en: "Spicy Cheese with Walnuts"
+        },
+
         price: 250000,
+
         category: "jreesh"
     },
 
+
     {
-        name: " لبنة حرة مع جوز",
+        name: {
+            ar: "لبنة حرة مع جوز",
+            en: "Spicy Labneh with Walnuts"
+        },
+
         price: 200000,
+
         category: "jreesh"
-    },
-
-
+    }
 
 ];
 
@@ -180,8 +392,13 @@ const menuItems = [
 const categoryBar =
     document.getElementById("category-bar");
 
+
 const menuGrid =
     document.getElementById("menu-grid");
+
+
+const languageToggle =
+    document.getElementById("language-toggle");
 
 
 /* =========================
@@ -204,6 +421,159 @@ function formatPrice(price) {
 
 
 /* =========================
+   UPDATE STATIC TEXT
+========================= */
+
+function updateStaticText() {
+
+    const t = translations[currentLanguage];
+
+
+    /* HTML language + direction */
+
+    document.documentElement.lang =
+        currentLanguage === "ar"
+            ? "ar"
+            : "en";
+
+
+    document.documentElement.dir =
+        currentLanguage === "ar"
+            ? "rtl"
+            : "ltr";
+
+
+    /* Page title */
+
+    document.title =
+        currentLanguage === "ar"
+            ? "جريش و نار | مناقيش على أصولها"
+            : "Jreesh W Nar | Authentic Manakish";
+
+
+    /* Shop name */
+
+    const shopName =
+        document.getElementById("shop-name");
+
+    if (shopName) {
+        shopName.textContent = t.shopName;
+    }
+
+
+    /* Hero subtitle */
+
+    const heroSubtitle =
+        document.getElementById("hero-subtitle");
+
+    if (heroSubtitle) {
+        heroSubtitle.textContent =
+            t.heroSubtitle;
+    }
+
+
+    /* Opening hours */
+
+    const openingText =
+        document.getElementById("opening-text");
+
+    if (openingText) {
+        openingText.textContent =
+            t.openingText;
+    }
+
+
+    /* Delivery */
+
+    const deliveryText =
+        document.getElementById("delivery-text");
+
+    if (deliveryText) {
+        deliveryText.textContent =
+            t.deliveryText;
+    }
+
+
+    /* WhatsApp */
+
+    const whatsappText =
+        document.getElementById("whatsapp-text");
+
+    if (whatsappText) {
+        whatsappText.textContent =
+            t.whatsapp;
+    }
+
+
+    /* Location */
+
+    const locationText =
+        document.getElementById("location-text");
+
+    if (locationText) {
+        locationText.textContent =
+            t.location;
+    }
+
+
+    /* Phone */
+
+    const phoneText =
+        document.getElementById("phone-text");
+
+    if (phoneText) {
+        phoneText.textContent =
+            t.phone;
+    }
+
+
+    /* Menu title */
+
+    const menuTitle =
+        document.getElementById("menu-title");
+
+    if (menuTitle) {
+        menuTitle.textContent =
+            t.menuTitle;
+    }
+
+
+    /* Menu subtitle */
+
+    const menuSubtitle =
+        document.getElementById("menu-subtitle");
+
+    if (menuSubtitle) {
+        menuSubtitle.textContent =
+            t.menuSubtitle;
+    }
+
+
+    /* Social title */
+
+    const socialTitle =
+        document.getElementById("social-title");
+
+    if (socialTitle) {
+        socialTitle.textContent =
+            t.socialTitle;
+    }
+
+
+    /* Footer subtitle */
+
+    const footerSubtitle =
+        document.getElementById("footer-subtitle");
+
+    if (footerSubtitle) {
+        footerSubtitle.textContent =
+            t.footerSubtitle;
+    }
+
+}
+
+
+/* =========================
    CREATE CATEGORY BUTTON
 ========================= */
 
@@ -221,11 +591,14 @@ function createCategoryButton(
 
 
     if (active) {
+
         button.classList.add("active");
+
     }
 
 
     button.dataset.category = id;
+
 
     button.textContent = name;
 
@@ -254,24 +627,36 @@ function renderCategories() {
     categoryBar.innerHTML = "";
 
 
+    /* ALL BUTTON */
+
     const allButton =
         createCategoryButton(
+
             "all",
-            "الكل",
+
+            translations[currentLanguage].all,
+
             currentCategory === "all"
+
         );
 
 
     categoryBar.appendChild(allButton);
 
 
+    /* OTHER CATEGORIES */
+
     categories.forEach(category => {
 
         const button =
             createCategoryButton(
+
                 category.id,
-                category.name,
+
+                category.name[currentLanguage],
+
                 currentCategory === category.id
+
             );
 
 
@@ -288,7 +673,9 @@ function renderCategories() {
 
 function setActiveCategory(categoryId) {
 
-    currentCategory = categoryId;
+    currentCategory =
+        categoryId;
+
 
     renderCategories();
 
@@ -310,12 +697,20 @@ function createMenuItem(item) {
     card.classList.add("menu-card");
 
 
+    const itemName =
+        item.name[currentLanguage];
+
+
+    const currency =
+        translations[currentLanguage].currency;
+
+
     card.innerHTML = `
 
         <div class="item-info">
 
             <h3>
-                ${item.name}
+                ${itemName}
             </h3>
 
         </div>
@@ -326,7 +721,7 @@ function createMenuItem(item) {
             ${formatPrice(item.price)}
 
             <span>
-                ل.ل
+                ${currency}
             </span>
 
         </div>
@@ -349,6 +744,7 @@ function renderMenu() {
 
 
     const filteredItems =
+
         currentCategory === "all"
 
             ? menuItems
@@ -370,13 +766,15 @@ function renderMenu() {
     });
 
 
+    /* EMPTY STATE */
+
     if (filteredItems.length === 0) {
 
         menuGrid.innerHTML = `
 
             <div class="empty-state">
 
-                لا يوجد أصناف حالياً
+                ${translations[currentLanguage].noItems}
 
             </div>
 
@@ -388,8 +786,55 @@ function renderMenu() {
 
 
 /* =========================
+   CHANGE LANGUAGE
+========================= */
+
+function setLanguage(language) {
+
+    currentLanguage =
+        language;
+
+
+    updateStaticText();
+
+    renderCategories();
+
+    renderMenu();
+
+}
+
+
+/* =========================
+   LANGUAGE TOGGLE
+========================= */
+
+if (languageToggle) {
+
+    languageToggle.addEventListener(
+        "click",
+        () => {
+
+            if (currentLanguage === "ar") {
+
+                setLanguage("en");
+
+            } else {
+
+                setLanguage("ar");
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================
    INITIALIZE
 ========================= */
+
+updateStaticText();
 
 renderCategories();
 
